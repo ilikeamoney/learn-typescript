@@ -1,0 +1,29 @@
+{
+  
+  "compilerOptions": {
+    // 타입스크립트에서 컴파일 되는 자바스크립트의 버전을 제어
+    "target": "ESNext",
+
+    // 타입스크립트 모듈 옵션 CommonJS(구형) 모듈 시스템과 ES(신형) 모듈 시스템 2가지가 있음
+    "module": "ESNext",
+
+    // 타입스크립트가 자바스크립트로 컴파일 될때 해당 디렉토리에 생성되는 옵션
+    "outDir": "dist",
+
+    // 타입스크립트 문법검사의 엄격성을 설정하는 옵션 true(엄격), false(유연)
+    "strict": true,
+
+    // 타입스크립트에서는 각각의 파일을 전역모듈로 인식하기 때문에 같은 이름의 변수를 중복 선언할 수 없음
+    // 하지만 moduleDetection 옵션을 사용하면 개별 모듈처럼 동일한 이름을 가진 변수를 선언할 수 있음
+    "moduleDetection": "force",
+
+    "skipLibCheck": true
+  },
+  // 타입스크립트에서는 CommonJS로 실행됨 그래서 ESM 모듈시스템으로 실행될 수 있게 옵션을 추가
+  "ts-node": {
+    "esm": true
+  },
+
+  // 모든 타입스크립트 파일을 컴파일 할때 편하도록 경로를 지정
+  "include": ["src"]
+}

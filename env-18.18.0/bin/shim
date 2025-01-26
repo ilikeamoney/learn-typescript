@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+export NODE_PATH='/Users/imjeongho/Study-Main/study_typescript/env-18.18.0/lib/node_modules'
+export NPM_CONFIG_PREFIX='/Users/imjeongho/Study-Main/study_typescript/env-18.18.0'
+export npm_config_prefix='/Users/imjeongho/Study-Main/study_typescript/env-18.18.0'
+exec 'env-18.18.0/bin/node' "$@"
